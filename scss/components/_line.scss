@@ -1,0 +1,23 @@
+.hline {
+    border-bottom: $line-width solid $white;
+}
+
+.vline {
+    width: $line-width;
+    height: 85vh;
+    margin: auto;
+}
+
+.vline-white {
+    border-left: $line-width solid $white;
+}
+
+.vline-black {
+    border-left: $line-width solid $rich-black;
+}
+
+@media screen and (max-width: 768px) {
+    .vline {
+        display: none;
+    }
+}

@@ -1,0 +1,18 @@
+.about {
+        background: $dark-green;
+}
+
+.view-gallery {
+        font-size: 90%;
+}
+
+.learn-more {
+        font-size: 170%;
+        margin-top: 4%;
+}
+
+.about .has-text-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+}

@@ -1,0 +1,15 @@
+.hero-foot {
+    padding: 4%;
+    padding-bottom: 1%;
+    background-color: $dark-green;
+    a {
+        color: $white;
+    }
+    a:hover {
+        color: $primary-green;
+    }
+    .documents {
+        margin-top: 4%;
+        text-decoration: underline;
+    }
+}

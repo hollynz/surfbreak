@@ -1,0 +1,18 @@
+.hero.landing {
+    background: url(../../img/_DSC8072.jpg) center / cover;
+    margin-bottom: 0;
+}
+
+.hero-body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30vh;
+    padding: 3rem 0;
+    .title {
+        margin: $small-margin;
+    }
+}
+
+.hero-body > .container, .hero.is-fullheight .hero-body > .container {
+    flex-grow: 0;
+}

@@ -1,0 +1,21 @@
+.contact {
+    color: $rich-black;
+    .heading {
+        color: $rich-black;
+        margin-bottom: 4%;
+    }
+    .blurb {
+        width: 80%;
+        margin: auto;
+    }
+    .contact-form {
+        padding: 4%;
+        background: #93b3c6;
+        border-radius: 1%;
+        border: 6px solid $primary-green;
+        margin-top: 4%;
+    }
+    .button {
+        margin-top: 4%;
+    }
+} 

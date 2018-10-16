@@ -1,0 +1,8 @@
+.carousel .carousel-navigation.is-overlay .carousel-nav-left, .carousel .carousel-navigation.is-overlay .carousel-nav-right {
+    background: $primary-green;
+    color: $white;
+}
+
+.carousel .carousel-navigation.is-overlay {
+    z-index: 2;
+}

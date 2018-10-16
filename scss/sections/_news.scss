@@ -1,0 +1,15 @@
+.news {
+    background: rgba(255, 255, 255, 0.7);
+    color: $rich-black;
+    .heading {
+        color: $rich-black;
+    }
+    .button {
+        border: $rich-black $active-border solid;
+        font-size: 120%;
+    }
+    .button:hover {
+        border: $primary-green $active-border solid;
+    }
+}
+

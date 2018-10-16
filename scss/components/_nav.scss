@@ -1,0 +1,60 @@
+.navbar-brand img {
+    max-height: 4rem;
+}
+
+.navbar-brand img:hover {
+    // Do something!
+}
+
+.navbar-item, .navbar-link {
+    color: $white;
+    font-family: 'Architects Daughter', cursive;
+}
+
+a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:hover, .navbar-link.is-active {
+    background: none;
+    color: $primary-green;
+}
+
+a.navbar-item {
+  position: relative;
+  margin: 0;
+}
+
+.navbar-burger {
+    align-self: center;
+    z-index: 100;
+}
+
+.page-link:after {
+  position: absolute;
+  top: 80%;
+  left: 0;
+  right: 100%;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: $primary-green;
+  height: 4%;
+  transition: all .5s;
+}
+
+.page-link:hover:after {
+  width: 100%;
+}
+
+// Javascript
+.navbar {
+    //Hide/show nav on scroll
+    position: fixed; 
+    top: 0;
+    transition: top 0.8s ease, background 0.8s ease;
+    width: 100%;
+}
+
+// header {
+//     position: fixed;
+//     width: 100%;
+//     z-index: 1;
+// }
