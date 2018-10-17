@@ -20,7 +20,6 @@ body {
   font-size: 5rem;
   letter-spacing: 0.1em;
   font-weight: 800;
-  margin-bottom: 8%;
 }
 
 .heading.heading-h2 {
@@ -146,7 +145,7 @@ a:hover {
   z-index: 2;
 }
 
-a img:hover {
+.news a img:hover, .events a img:hover, .work a img:hover {
   outline: #00d1b2 solid 1px;
 }
 
@@ -185,13 +184,8 @@ a img:hover {
   background: #034e51;
 }
 
-.view-gallery {
-  font-size: 90%;
-}
-
-.learn-more {
-  font-size: 170%;
-  margin-top: 4%;
+.about .heading {
+  margin-bottom: 8%;
 }
 
 .about .has-text-right {
@@ -205,6 +199,15 @@ a img:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.about .view-gallery {
+  font-size: 90%;
+}
+
+.about .learn-more {
+  font-size: 170%;
+  margin-top: 4%;
 }
 
 .news {
@@ -243,6 +246,10 @@ a img:hover {
 .work .button {
   margin-top: 4%;
   font-size: 180%;
+}
+
+.work .heading {
+  margin-bottom: 8%;
 }
 
 .contact {

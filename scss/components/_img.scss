@@ -1,3 +1,5 @@
-a img:hover {
-    outline: $primary-green solid $active-border;
+.news, .events, .work {
+    a img:hover {
+        outline: $primary-green solid $active-border;
+    }
 }
