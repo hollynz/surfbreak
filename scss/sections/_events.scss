@@ -1,3 +1,35 @@
 .events {
     background: $dark-green;
+    .facebook-logo {
+        width: 20%;
+        margin-right: 3%;
+    }
+    .level {
+        justify-content: flex-start;
+    }
+    .media-item {
+        // padding: -2%;
+    }
+    .social-media {
+        .fab, .fas {
+            font-size: 120%;
+        }
+    }
+    .media-item-content {
+        font-family: Helvetica, Arial, sans-serif;
+        a {
+            color: $white;
+            font-size: 120%;
+        }
+        a:hover {
+            color: $white;
+            -webkit-text-stroke: 0.3px $primary-green;
+        }
+    }
+    .button {
+        font-size: 90%;
+    }
+    .facebook-img {
+        border: $white solid 1px;
+    }
 }

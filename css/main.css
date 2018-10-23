@@ -145,7 +145,7 @@ a:hover {
   z-index: 2;
 }
 
-.news a img:hover, .events a img:hover, .work a img:hover {
+.about a img:hover, .news a img:hover, .events a img:hover, .work a img:hover {
   outline: #00d1b2 solid 1px;
 }
 
@@ -156,6 +156,10 @@ a:hover {
 .hero.landing {
   background: url(../../img/_DSC8072.jpg) center/cover;
   margin-bottom: 0;
+}
+
+.hero.landing a {
+  font-size: 120%;
 }
 
 .hero-body {
@@ -232,6 +236,43 @@ a:hover {
   background: #034e51;
 }
 
+.events .facebook-logo {
+  width: 20%;
+  margin-right: 3%;
+}
+
+.events .level {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.events .social-media .fab, .events .social-media .fas {
+  font-size: 120%;
+}
+
+.events .media-item-content {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.events .media-item-content a {
+  color: #fff;
+  font-size: 120%;
+}
+
+.events .media-item-content a:hover {
+  color: #fff;
+  -webkit-text-stroke: 0.3px #00d1b2;
+}
+
+.events .button {
+  font-size: 90%;
+}
+
+.events .facebook-img {
+  border: #fff solid 1px;
+}
+
 .work {
   background: url(../../img/_DSC8037.jpg) top center/cover;
   -ms-flex-item-align: stretch;
@@ -284,6 +325,7 @@ a:hover {
 
 .partners .heading {
   color: #00120b;
+  margin-bottom: 4%;
 }
 
 .partners img {
@@ -313,8 +355,57 @@ a:hover {
   text-decoration: underline;
 }
 
+.hero-foot .media-item {
+  width: 70%;
+}
+
+.hero-foot .media-item:first-child {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.hero-foot .media-item:last-child {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.hero-foot .address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero-foot .address span {
+  font-size: 140%;
+}
+
+.hero-foot .address .email {
+  margin-top: 4%;
+}
+
+.hero-foot .button {
+  width: 50%;
+  margin: auto;
+}
+
+.hero-foot .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
 .hero.pattern {
-  background: url(../../img/maori_pattern.png) center/cover;
+  background: url(../../img/maori_pattern.png) no-repeat;
 }
 
 section {
@@ -344,6 +435,10 @@ section {
   margin: 1rem;
 }
 
+.full-container .level a * {
+  margin: 0;
+}
+
 .pattern .hero-body {
   margin-top: 0;
   padding-top: 0;
@@ -369,18 +464,38 @@ section {
   position: relative;
 }
 
+.media-item-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.media-item-content-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .overlay {
   position: absolute;
   z-index: 1;
 }
 
 .overlay-bottom-left {
-  bottom: 4%;
+  bottom: 7%;
   left: 4%;
 }
 
 .overlay-bottom-right {
-  bottom: 4%;
+  bottom: 7%;
   right: 4%;
 }
 
