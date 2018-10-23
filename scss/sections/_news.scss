@@ -4,9 +4,6 @@
     .heading {
         color: $rich-black;
     }
-    .heading.heading-h3 {
-        color: $white;
-    }
     .button {
         border: $rich-black $active-border solid;
         font-size: 120%;
@@ -19,6 +16,13 @@
     }
     a:hover {
         color: $primary-green;
+    }
+    .title {
+        font-size: 2em;
+        color: $rich-black;
+    }
+    .blurb {
+        color: $rich-black;
     }
 }
 

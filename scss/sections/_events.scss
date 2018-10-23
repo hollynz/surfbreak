@@ -7,9 +7,6 @@
     .level {
         justify-content: flex-start;
     }
-    .media-item {
-        // padding: -2%;
-    }
     .social-media {
         .fab, .fas {
             font-size: 120%;
@@ -30,9 +27,19 @@
         font-size: 80%;
     }
     img {
-        border: $white solid 1px;
+        border: $white solid $active-border;
     }
     .title {
-        // font-size: 
+        font-size: 2em;
+        color: $rich-black;
+    }
+    .blurb {
+        color: $rich-black;
+    }
+    a {
+        color: $white;
+    }
+    a:hover {
+        color: $primary-green;
     }
 }

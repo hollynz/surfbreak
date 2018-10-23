@@ -26,6 +26,20 @@
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+
+    <!-- Facebook page plugin -->
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.1';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Hero landing -->
     <div class="hero is-fullheight landing">
         <div class="hero-head">
             <!-- <header class="headroom"> -->
@@ -145,14 +159,16 @@
 
                             <!-- Latest News -->
                             <div class="column is-two-fifths">
-                                <h1 class="heading">Latest News</h1>
+                                <h1 class="heading latest-news">Latest News</h1>
                                 <div class="media-item">
                                     <a href="index.html">
                                         <figure class="figure">
                                             <img src="/img/_DSC0808.jpg" alt="Latest news">
                                         </figure>
-                                        <p class="title overlay overlay-top-right">Lorem Ipsum
+                                        <p class="title overlay overlay-top-right has-text-right">
+                                            Saving Mangamaunu
                                         </p>
+                                        <p class="blurb overlay overlay-middle-right has-text-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                         <p class="overlay overlay-bottom-left">Learn more ></p>
                                     </a>
                                 </div>
@@ -161,8 +177,11 @@
                                         <figure class="figure">
                                             <img src="/img/_DSC5857.jpg" alt="Latest news">
                                         </figure>
-                                        <p class="title overlay overlay-top-right">Lorem Ipsum
+                                        <p class="title overlay overlay-top-right">
+                                            Lyall Bay Carpark
                                         </p>
+                                        <p class="blurb overlay overlay-middle-right has-text-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
                                         <p class="overlay overlay-bottom-left">Learn more ></p>
                                     </a>
                                 </div>
@@ -239,26 +258,29 @@
                                 <h1 class="heading">Upcoming Events</h1>
                                 <div class="media-item">
                                     <a href="index.html">
-                                        <p class="title overlay overlay-top-right">
-                                            24 November
-                                        </p>
-                                        <p class="overlay">
-                                            Lorem Ipsum
-                                        </p>
                                         <figure class="figure">
                                             <img src="/img/_DSC0808.jpg" alt="Lorem Ipsum">
                                         </figure>
+                                        <p class="title overlay overlay-top-right">
+                                                24 November
+                                            </p>
+                                            <p class="blurb overlay overlay-middle-right has-text-right">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            </p>
                                         <p class="overlay overlay-bottom-left">Check it out ></p>
                                     </a>
                                 </div>
                                 <div class="media-item">
                                     <a href="index.html">
-                                        <p class="title overlay overlay-top-right">
-                                            6 December
-                                        </p>
                                         <figure class="figure">
-                                            <img src="/img/_DSC0808.jpg" alt="Lorem Ipsum">
+                                            <img src="/img/_DSC5857.jpg" alt="Lorem Ipsum">
                                         </figure>
+                                        <p class="title overlay overlay-top-right">
+                                                6 December
+                                            </p>
+                                            <p class="blurb overlay overlay-middle-right has-text-right">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                </p>
                                         <p class="overlay overlay-bottom-left">Check it out ></p>
                                     </a>
                                 </div>
@@ -274,8 +296,18 @@
                             <div class="column is-two-fifths social-media">
                                 <h2 class="heading heading-h1">Follow Us!</h2>
                                 <!-- Facebook -->
-                                <div>
-                                    <!-- <h1 class="heading has-text-right">Facebook</h1> -->
+                                <div class="fb-page" data-href="https://www.facebook.com/Surfbreak-Protection-Society-158580380850950/" data-tabs="timeline"
+                                    data-width="340" data-height="200" data-small-header="false" data-adapt-container-width="true"
+                                    data-hide-cover="false" data-show-facepile="false">
+                                    <blockquote cite="https://www.facebook.com/Surfbreak-Protection-Society-158580380850950/" class="fb-xfbml-parse-ignore">
+                                        <a href="https://www.facebook.com/Surfbreak-Protection-Society-158580380850950/">Surfbreak Protection Society</a>
+                                    </blockquote>
+                                </div>
+
+
+
+
+                                <!-- <div>
                                     <div class="media-item">
                                         <a href="https://www.facebook.com">
                                             <figure class="figure">
@@ -308,22 +340,13 @@
                                             </div>
                                         </a>
                                     </div>
-                                </div>
+                                </div> -->
 
-
-                                <!-- <a href="https://www.facebook.com" target="_blank" class="overlay overlay-top-left">
-                                            <div class="level">
-                                                <span class="icon is-large">
-                                                    <i class="fab fa-facebook fa-2x"></i>
-                                                </span>
-                                            </div>
-                                        </a> -->
                                 <!-- Instagram -->
                                 <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BhvmkYLhbug/?utm_source=ig_embed&amp;utm_medium=loading"
                                     data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
                                     <div style="padding:16px;">
-                                        <a href="https://www.instagram.com/p/BhvmkYLhbug/?utm_source=ig_embed&amp;utm_medium=loading"
-                                            style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                                        <a href="https://www.instagram.com/p/BhvmkYLhbug/?utm_source=ig_embed&amp;utm_medium=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
                                             target="_blank">
                                             <div style=" display: flex; flex-direction: row; align-items: center;">
                                                 <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
@@ -334,8 +357,7 @@
                                             </div>
                                             <div style="padding: 19% 0;"></div>
                                             <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
-                                                <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg"
-                                                    xmlns:xlink="https://www.w3.org/1999/xlink">
+                                                <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
                                                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                                         <g transform="translate(-511.000000, -20.000000)" fill="#000000">
                                                             <g>
@@ -347,7 +369,7 @@
                                             </div>
                                             <div style="padding-top: 8px;">
                                                 <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
-                                                View this post on Instagram</div>
+                                                    View this post on Instagram</div>
                                             </div>
                                             <div style="padding: 12.5% 0;"></div>
                                             <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
@@ -384,7 +406,7 @@
 
 
                                 <div>
-                                    <a class="twitter-timeline" data-width="340" data-height="200" data-theme="dark" data-link-color="#00d1b2" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a>
+                                    <a class="twitter-timeline" data-width="340" data-height="200" data-link-color="#00d1b2" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a>
                                     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                                 </div>
                             </div>
@@ -553,15 +575,26 @@
                                 </p>
                             </div>
                             <div class="column is-one-third">
-                                <a href="#" class="button button-primary is-primary">
-                                    <span>Give</span>
-                                    <span class="icon">
-                                        <i class="fas fa-hand-holding-heart"></i>
-                                    </span>
-                                </a>
-                                <a href="#" class="button button-primary is-primary">
+                                <div class="social-media">
+                                    <a href="https://www.facebook.com">
+                                        <span class="icon is-large">
+                                            <i class="fab fa-facebook is-3x"></i>
+                                        </span>
+                                    </a>
+                                    <a href="https://www.facebook.com">
+                                        <span class="icon is-large">
+                                            <i class="fab fa-instagram is-3x"></i>
+                                        </span>
+                                    </a>
+                                    <a href="https://www.twitter.com">
+                                        <span class="icon is-large">
+                                            <i class="fab fa-twitter is-3x"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- <a href="#" class="button button-primary is-primary">
                                     <span>Join the Whanau!</span>
-                                </a>
+                                </a> -->
 
                             </div>
                             <div class="column is-one-third">
@@ -589,26 +622,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="hline"></div>
 
-                    <div class="social-media">
-                        <a href="https://www.facebook.com">
-                            <span class="icon is-large">
-                                <i class="fab fa-facebook is-3x"></i>
-                            </span>
-                        </a>
-                        <a href="https://www.facebook.com">
-                            <span class="icon is-large">
-                                <i class="fab fa-instagram is-3x"></i>
-                            </span>
-                        </a>
-                        <a href="https://www.twitter.com">
-                            <span class="icon is-large">
-                                <i class="fab fa-twitter is-3x"></i>
-                            </span>
-                        </a>
-                    </div>
-                    <!-- <div class="level"> -->
                     <div class="documents columns is-variable is-mobile is-8 has-text-centered">
                         <div class="column is-one-third">
                             <a href="#">Registered Charities</a>
@@ -620,7 +634,6 @@
                             <a href="#">Constitution Rules</a>
                         </div>
                     </div>
-                    <!-- </div> -->
                 </div>
             </footer>
         </div>

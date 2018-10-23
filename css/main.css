@@ -219,6 +219,10 @@ a:hover {
   margin-top: 4%;
 }
 
+.about img {
+  border: #fff solid 1px;
+}
+
 .news {
   background: rgba(255, 255, 255, 0.7);
   color: #00120b;
@@ -226,10 +230,6 @@ a:hover {
 
 .news .heading {
   color: #00120b;
-}
-
-.news .heading.heading-h3 {
-  color: #fff;
 }
 
 .news .button {
@@ -247,6 +247,15 @@ a:hover {
 
 .news a:hover {
   color: #00d1b2;
+}
+
+.news .title {
+  font-size: 2em;
+  color: #00120b;
+}
+
+.news .blurb {
+  color: #00120b;
 }
 
 .events {
@@ -288,6 +297,23 @@ a:hover {
 
 .events img {
   border: #fff solid 1px;
+}
+
+.events .title {
+  font-size: 2em;
+  color: #00120b;
+}
+
+.events .blurb {
+  color: #00120b;
+}
+
+.events a {
+  color: #fff;
+}
+
+.events a:hover {
+  color: #00d1b2;
 }
 
 .work {
@@ -357,7 +383,6 @@ a:hover {
   padding: 4%;
   padding-bottom: 1%;
   background-color: #034e51;
-  font-size: 70%;
 }
 
 .hero-foot .container-padding {
@@ -402,27 +427,35 @@ a:hover {
 }
 
 .hero-foot .address span {
-  font-size: 140%;
+  font-size: 100%;
 }
 
 .hero-foot .address .email {
   margin-top: 4%;
 }
 
-.hero-foot .button {
-  width: 50%;
+.hero-foot .hline {
+  margin-bottom: 2%;
+}
+
+.hero-foot .button-column {
+  margin: auto;
+}
+
+.hero-foot .button-column .button.give {
+  width: 40%;
   margin: auto;
 }
 
 .hero-foot .social-media {
-  font-size: 5em;
+  font-size: 3em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -431,7 +464,7 @@ a:hover {
 }
 
 .hero-foot .social-media * {
-  padding: 2%;
+  padding: 20%;
 }
 
 .hero.pattern {
@@ -530,12 +563,18 @@ section {
 }
 
 .overlay-top-left {
-  top: 4%;
-  left: 4%;
+  top: 2%;
+  left: 2%;
 }
 
 .overlay-top-right {
-  top: 4%;
-  right: 4%;
+  top: 2%;
+  right: 2%;
+}
+
+.overlay-middle-right {
+  font-size: 90%;
+  top: 30%;
+  margin-right: 8%;
 }
 /*# sourceMappingURL=main.css.map */
