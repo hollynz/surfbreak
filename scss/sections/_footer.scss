@@ -1,7 +1,11 @@
 .hero-foot {
+    .container-padding {
+        padding: 2%;
+    }
     padding: 4%;
     padding-bottom: 1%;
     background-color: $dark-green;
+    font-size: 70%;
     a {
         color: $white;
     }
@@ -36,8 +40,13 @@
         margin: auto;
     }
     .social-media {
+        font-size: 5em;
         display: flex;
         flex-direction: row;
+        justify-content: center;
         align-self: center;
+        * {
+            padding: 2%;
+        }
     }
 }

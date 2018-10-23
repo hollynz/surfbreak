@@ -4,12 +4,21 @@
     .heading {
         color: $rich-black;
     }
+    .heading.heading-h3 {
+        color: $white;
+    }
     .button {
         border: $rich-black $active-border solid;
         font-size: 120%;
     }
     .button:hover {
         border: $primary-green $active-border solid;
+    }
+    a {
+        color: $white;
+    }
+    a:hover {
+        color: $primary-green;
     }
 }
 

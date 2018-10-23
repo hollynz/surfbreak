@@ -26,6 +26,11 @@ body {
   font-size: 2.5em;
 }
 
+.heading.heading-h3 {
+  font-size: 180%;
+  color: #fff;
+}
+
 a {
   color: #00d1b2;
 }
@@ -158,7 +163,7 @@ a:hover {
   margin-bottom: 0;
 }
 
-.hero.landing a {
+.hero.landing .level a:last-child {
   font-size: 120%;
 }
 
@@ -223,6 +228,10 @@ a:hover {
   color: #00120b;
 }
 
+.news .heading.heading-h3 {
+  color: #fff;
+}
+
 .news .button {
   border: #00120b 1px solid;
   font-size: 120%;
@@ -230,6 +239,14 @@ a:hover {
 
 .news .button:hover {
   border: #00d1b2 1px solid;
+}
+
+.news a {
+  color: #fff;
+}
+
+.news a:hover {
+  color: #00d1b2;
 }
 
 .events {
@@ -266,10 +283,10 @@ a:hover {
 }
 
 .events .button {
-  font-size: 90%;
+  font-size: 80%;
 }
 
-.events .facebook-img {
+.events img {
   border: #fff solid 1px;
 }
 
@@ -340,6 +357,11 @@ a:hover {
   padding: 4%;
   padding-bottom: 1%;
   background-color: #034e51;
+  font-size: 70%;
+}
+
+.hero-foot .container-padding {
+  padding: 2%;
 }
 
 .hero-foot a {
@@ -393,6 +415,7 @@ a:hover {
 }
 
 .hero-foot .social-media {
+  font-size: 5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -400,8 +423,15 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-item-align: center;
       align-self: center;
+}
+
+.hero-foot .social-media * {
+  padding: 2%;
 }
 
 .hero.pattern {
