@@ -41,7 +41,6 @@ a {
 
 .vline {
   width: 2px;
-  height: 85vh;
   margin: auto;
 }
 
@@ -258,6 +257,10 @@ a:hover {
   color: #00120b;
 }
 
+.news .vline {
+  height: 90vh;
+}
+
 .events {
   background: #034e51;
 }
@@ -314,6 +317,10 @@ a:hover {
 
 .events a:hover {
   color: #00d1b2;
+}
+
+.events .vline {
+  height: 130vh;
 }
 
 .work {
