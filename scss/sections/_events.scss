@@ -30,11 +30,12 @@
         border: $white solid $active-border;
     }
     .title {
-        font-size: 2em;
+        font-size: 3.5em;
         color: $rich-black;
     }
     .blurb {
         color: $rich-black;
+        font-size: 100%;
     }
     a {
         color: $white;
@@ -43,6 +44,21 @@
         color: $primary-green;
     }
     .vline {
-        height: 130vh;
+        height: 100vh;
+    }
+    .overlay-middle-right {
+        top: 38%;
+        right: 8%;
+    }
+    .media-item {
+        @include tablet {
+            margin-bottom: 8%;
+        }
+        @include desktop {
+            margin-bottom: 8%;
+        }
+        @include widescreen {
+            margin-bottom: 8%;
+        }
     }
 }

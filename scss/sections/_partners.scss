@@ -6,6 +6,10 @@
     }
     img {
         width: 60%;
+        @include tablet {
+            width: 30%;
+            margin: 4%;
+        }
     }
     a img:hover {
         outline: none;

@@ -22,6 +22,12 @@ body {
   font-weight: 800;
 }
 
+@media (max-width: 769px) {
+  .heading {
+    font-size: 3em;
+  }
+}
+
 .heading.heading-h2 {
   font-size: 2.5em;
 }
@@ -58,33 +64,48 @@ a {
   }
 }
 
-.navbar-brand img {
+.navbar {
+  position: fixed;
+  top: 0;
+  -webkit-transition: top 0.8s ease, background 0.8s ease;
+  transition: top 0.8s ease, background 0.8s ease;
+  width: 100%;
+}
+
+@media (max-width: 1088px) {
+  .navbar .navbar-brand {
+    background: -webkit-gradient(linear, right top, left top, color-stop(1%, rgba(3, 78, 81, 0.8)), to(rgba(255, 255, 255, 0)));
+    background: linear-gradient(to left, rgba(3, 78, 81, 0.8) 1%, rgba(255, 255, 255, 0));
+  }
+}
+
+.navbar .navbar-brand img {
   max-height: 4rem;
 }
 
-.navbar-item, .navbar-link {
+.navbar .navbar-item, .navbar .navbar-link {
   color: #fff;
   font-family: 'Architects Daughter', cursive;
 }
 
-a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:hover, .navbar-link.is-active {
+.navbar a.navbar-item:hover, .navbar a.navbar-item.is-active, .navbar .navbar-link:hover, .navbar .navbar-link.is-active {
   background: none;
   color: #00d1b2;
 }
 
-a.navbar-item {
+.navbar a.navbar-item {
   position: relative;
   margin: 0;
 }
 
-.navbar-burger {
+.navbar .navbar-burger {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   z-index: 100;
 }
 
-.page-link:after {
+.navbar .page-link:after {
   position: absolute;
   top: 80%;
   left: 0;
@@ -99,16 +120,16 @@ a.navbar-item {
   transition: all .5s;
 }
 
-.page-link:hover:after {
+.navbar .page-link:hover:after {
   width: 100%;
 }
 
-.navbar {
-  position: fixed;
-  top: 0;
-  -webkit-transition: top 0.8s ease, background 0.8s ease;
-  transition: top 0.8s ease, background 0.8s ease;
-  width: 100%;
+@media (max-width: 1088px) {
+  .navbar .navbar-menu {
+    background: -webkit-gradient(linear, right top, left top, color-stop(2%, rgba(3, 78, 81, 0.8)), to(rgba(255, 255, 255, 0)));
+    background: linear-gradient(to left, rgba(3, 78, 81, 0.8) 2%, rgba(255, 255, 255, 0));
+    text-align: right;
+  }
 }
 
 .button.is-primary {
@@ -121,7 +142,7 @@ a.navbar-item {
 }
 
 .button-primary {
-  font-size: 140%;
+  font-size: 160%;
 }
 
 .button.is-primary:hover {
@@ -149,6 +170,14 @@ a:hover {
   z-index: 2;
 }
 
+.carousel .carousel-container .carousel-item .title {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  text-align: left;
+  background: none;
+  font-size: 2rem;
+}
+
 .about a img:hover, .news a img:hover, .events a img:hover, .work a img:hover {
   outline: #00d1b2 solid 1px;
 }
@@ -162,8 +191,64 @@ a:hover {
   margin-bottom: 0;
 }
 
+@media (max-width: 1088px) {
+  .hero.landing {
+    padding-top: 4%;
+  }
+}
+
+.hero.landing .level {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 1280px) {
+  .hero.landing .level {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (max-width: 769px) {
+  .hero.landing .level {
+    margin-top: 2%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 140%;
+  }
+}
+
 .hero.landing .level a:last-child {
-  font-size: 120%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.6em;
+}
+
+@media (max-width: 1088px) {
+  .hero.landing .level a:last-child {
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 769px) {
+  .hero.landing .level a:last-child {
+    color: #fff;
+  }
+}
+
+@media (max-width: 769px) {
+  .hero.landing .level a:hover {
+    color: #00d1b2;
+  }
 }
 
 .hero-body {
@@ -182,6 +267,18 @@ a:hover {
   margin: 1rem;
 }
 
+@media (max-width: 1280px) {
+  .hero-body .title {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 769px) {
+  .hero-body .title {
+    font-size: 1.6em;
+  }
+}
+
 .hero-body > .container, .hero.is-fullheight .hero-body > .container {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
@@ -196,7 +293,7 @@ a:hover {
   margin-bottom: 8%;
 }
 
-.about .has-text-right {
+.about .blurb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -207,6 +304,13 @@ a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  text-align: right;
+}
+
+@media (max-width: 769px) {
+  .about .blurb {
+    text-align: justify;
+  }
 }
 
 .about .view-gallery {
@@ -255,10 +359,22 @@ a:hover {
 
 .news .blurb {
   color: #00120b;
+  font-size: 90%;
 }
 
 .news .vline {
   height: 90vh;
+}
+
+.news .overlay-middle-right {
+  top: 30%;
+  right: 8%;
+}
+
+@media (max-width: 769px) {
+  .news .media-item {
+    margin-bottom: 8%;
+  }
 }
 
 .events {
@@ -303,12 +419,13 @@ a:hover {
 }
 
 .events .title {
-  font-size: 2em;
+  font-size: 3.5em;
   color: #00120b;
 }
 
 .events .blurb {
   color: #00120b;
+  font-size: 100%;
 }
 
 .events a {
@@ -320,7 +437,30 @@ a:hover {
 }
 
 .events .vline {
-  height: 130vh;
+  height: 100vh;
+}
+
+.events .overlay-middle-right {
+  top: 38%;
+  right: 8%;
+}
+
+@media (max-width: 769px) {
+  .events .media-item {
+    margin-bottom: 8%;
+  }
+}
+
+@media (max-width: 1088px) {
+  .events .media-item {
+    margin-bottom: 8%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .events .media-item {
+    margin-bottom: 8%;
+  }
 }
 
 .work {
@@ -330,8 +470,16 @@ a:hover {
       align-self: stretch;
 }
 
-.work .has-text-right {
+.work .blurb {
   padding-right: 3%;
+  text-align: right;
+  margin-bottom: 4%;
+}
+
+@media (max-width: 1088px) {
+  .work .blurb {
+    text-align: justify;
+  }
 }
 
 .work .button {
@@ -380,6 +528,13 @@ a:hover {
 
 .partners img {
   width: 60%;
+}
+
+@media (max-width: 769px) {
+  .partners img {
+    width: 30%;
+    margin: 4%;
+  }
 }
 
 .partners a img:hover {
@@ -474,8 +629,21 @@ a:hover {
   padding: 20%;
 }
 
+@media (max-width: 769px) {
+  .hero-foot .title {
+    font-size: 2em;
+  }
+}
+
 .hero.pattern {
   background: url(../../img/maori_pattern.png) no-repeat;
+}
+
+@media (max-width: 769px) {
+  .hero.pattern section {
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
 }
 
 section {
@@ -577,11 +745,5 @@ section {
 .overlay-top-right {
   top: 2%;
   right: 2%;
-}
-
-.overlay-middle-right {
-  font-size: 90%;
-  top: 30%;
-  margin-right: 8%;
 }
 /*# sourceMappingURL=main.css.map */

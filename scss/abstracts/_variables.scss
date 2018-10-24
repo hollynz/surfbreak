@@ -1,9 +1,10 @@
-// Colors
+@import '../../node_modules/bulma/sass/utilities/initial-variables.sass';
+
 $white: #fff;
 $rich-black: #00120b;
-$primary-green: #00d1b2; // OR #30e8a1 ?????
+$primary-green: #00d1b2;
 $dark-green: #034e51;
-// #359ab1 
+$dark-green-transparent: rgba(3, 78, 81, 0.8);
 
 $small-margin: 1rem;
 $section-padding: 8%;

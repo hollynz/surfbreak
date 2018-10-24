@@ -3,10 +3,14 @@
         .heading {
                 margin-bottom: $heading-margin-large;
         }
-        .has-text-right {
+        .blurb {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                text-align: right;
+                @include tablet {
+                        text-align: justify;
+                }
         }
         .view-gallery {
                 font-size: 90%;

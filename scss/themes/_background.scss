@@ -1,3 +1,9 @@
 .hero.pattern {
     background: url(../../img/maori_pattern.png) no-repeat;
+    section {
+        @include tablet {
+            padding-top: 15%;
+            padding-bottom: 15%;
+        }
+    }
 }

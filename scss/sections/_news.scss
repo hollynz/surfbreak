@@ -23,9 +23,19 @@
     }
     .blurb {
         color: $rich-black;
+        font-size: 90%;
     }
     .vline {
         height: 90vh;
+    }
+    .overlay-middle-right {
+        top: 30%;
+        right: 8%;
+    }
+    .media-item {
+        @include tablet {
+            margin-bottom: 8%;
+        }
     }
 }
 
