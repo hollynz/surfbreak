@@ -3,6 +3,12 @@
     img {
         border: $white solid $active-border;
     }
+    .heading {
+        @include tablet {
+            text-align: center;
+            margin-bottom: 8%;
+        }
+    }
     .title {
         color: $rich-black;
         font-size: 3.4em;
@@ -56,6 +62,7 @@
     }
     .media-item {
         @include tablet {
+            margin: auto;
             margin-bottom: 8%;
         }
         @include desktop {

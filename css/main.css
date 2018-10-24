@@ -385,6 +385,13 @@ a:hover {
   border: #fff solid 1px;
 }
 
+@media (max-width: 769px) {
+  .events .heading {
+    text-align: center;
+    margin-bottom: 8%;
+  }
+}
+
 .events .title {
   color: #00120b;
   font-size: 3.4em;
@@ -474,6 +481,7 @@ a:hover {
 
 @media (max-width: 769px) {
   .events .media-item {
+    margin: auto;
     margin-bottom: 8%;
   }
 }
