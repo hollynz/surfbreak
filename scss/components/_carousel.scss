@@ -1,15 +1,19 @@
-.carousel .carousel-navigation.is-overlay .carousel-nav-left, .carousel .carousel-navigation.is-overlay .carousel-nav-right {
-    background: $primary-green;
-    color: $white;
-}
-
-.carousel .carousel-navigation.is-overlay {
-    z-index: 2;
-}
-
-.carousel .carousel-container .carousel-item .title {
-    align-self: flex-end;
-    text-align: left;
-    background: none;
-    font-size: 2rem;
+.carousel {
+    .carousel-container {
+        .carousel-item {
+            .title {
+                align-self: flex-end;
+                text-align: left;
+                background: none;
+                font-size: 2rem;
+            }
+        }
+    } 
+    .carousel-navigation.is-overlay {
+        z-index: 2;
+        .carousel-nav-left, .carousel-nav-right {
+            background: $primary-green;
+            color: $white;
+        }
+    }   
 }

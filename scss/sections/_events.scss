@@ -1,41 +1,36 @@
 .events {
     background: $dark-green;
-    .facebook-logo {
-        width: 20%;
-        margin-right: 3%;
-    }
-    .level {
-        justify-content: flex-start;
-    }
-    .social-media {
-        .fab, .fas {
-            font-size: 120%;
-        }
-    }
-    .media-item-content {
-        font-family: Helvetica, Arial, sans-serif;
-        a {
-            color: $white;
-            font-size: 120%;
-        }
-        a:hover {
-            color: $white;
-            -webkit-text-stroke: 0.3px $primary-green;
-        }
-    }
-    .button {
-        font-size: 80%;
-    }
     img {
         border: $white solid $active-border;
     }
     .title {
-        font-size: 3.5em;
         color: $rich-black;
+        font-size: 3.4em;
+        @include custom(1280px){
+            font-size: 2.5em;
+        }
+        @include desktop {
+            font-size: 2em;
+        }
+        @include custom(900px){
+            font-size: 1.9em;
+        }
+        @include custom(($tablet)-1px) {
+            font-size: 3.6em;
+        }
     }
     .blurb {
         color: $rich-black;
-        font-size: 100%;
+        font-size: 1.2em;
+        @include custom(1280px){
+            font-size: 0.9em;
+        }
+        @include desktop {
+            font-size: 0.8em;
+        }
+        @include custom(($tablet)-1px) {
+            font-size: 1em;
+        }
     }
     a {
         color: $white;
@@ -44,11 +39,20 @@
         color: $primary-green;
     }
     .vline {
-        height: 100vh;
+        height: 110vh;
     }
     .overlay-middle-right {
-        top: 38%;
         right: 8%;
+        top: 34%;
+        @include desktop {
+            top: 34%;
+        }
+        @include custom(900px){
+            top: 38%;
+        }
+        @include custom(($tablet)-1px) {
+            top: 36%;
+        }
     }
     .media-item {
         @include tablet {

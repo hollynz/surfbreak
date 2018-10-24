@@ -14,6 +14,9 @@
     .documents {
         margin-top: 4%;
         text-decoration: underline;
+        @include tablet {
+            font-size: 0.7em;
+        }
     }
     .media-item {
         width: 70%;
@@ -49,14 +52,26 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-self: center;
-        * {
-            padding: 20%;
+        @include tablet {
+            flex-direction: row;
+            justify-content: space-around;
+            align-content: space-between;
+        }
+    }
+    .get-in-touch {
+        @include tablet {
+            text-align: center;
         }
     }
     .title {
         @include tablet {
-            font-size: 2em;
+            margin-top: 4%;
+            font-size: 2.5em;
+        }
+    }
+    .newsletter {
+        @include tablet {
+            display: none;
         }
     }
 }

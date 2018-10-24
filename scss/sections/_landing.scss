@@ -11,7 +11,7 @@
         }
         @include tablet {
             margin-top: 2%;
-            justify-content: flex-end;
+            justify-content: flex-start;
             flex-direction: column;
             font-size: 140%;
         }
@@ -32,7 +32,6 @@
         }
     }
 }
-
 .hero-body {
     display: flex;
     flex-direction: column;

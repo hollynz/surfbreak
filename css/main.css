@@ -161,21 +161,21 @@ a:hover {
   color: #fff;
 }
 
-.carousel .carousel-navigation.is-overlay .carousel-nav-left, .carousel .carousel-navigation.is-overlay .carousel-nav-right {
-  background: #00d1b2;
-  color: #fff;
-}
-
-.carousel .carousel-navigation.is-overlay {
-  z-index: 2;
-}
-
 .carousel .carousel-container .carousel-item .title {
   -ms-flex-item-align: end;
       align-self: flex-end;
   text-align: left;
   background: none;
   font-size: 2rem;
+}
+
+.carousel .carousel-navigation.is-overlay {
+  z-index: 2;
+}
+
+.carousel .carousel-navigation.is-overlay .carousel-nav-left, .carousel .carousel-navigation.is-overlay .carousel-nav-right {
+  background: #00d1b2;
+  color: #fff;
 }
 
 .about a img:hover, .news a img:hover, .events a img:hover, .work a img:hover {
@@ -215,9 +215,9 @@ a:hover {
 @media (max-width: 769px) {
   .hero.landing .level {
     margin-top: 2%;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -309,7 +309,7 @@ a:hover {
 
 @media (max-width: 769px) {
   .about .blurb {
-    text-align: justify;
+    text-align: left;
   }
 }
 
@@ -381,51 +381,60 @@ a:hover {
   background: #034e51;
 }
 
-.events .facebook-logo {
-  width: 20%;
-  margin-right: 3%;
-}
-
-.events .level {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.events .social-media .fab, .events .social-media .fas {
-  font-size: 120%;
-}
-
-.events .media-item-content {
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-.events .media-item-content a {
-  color: #fff;
-  font-size: 120%;
-}
-
-.events .media-item-content a:hover {
-  color: #fff;
-  -webkit-text-stroke: 0.3px #00d1b2;
-}
-
-.events .button {
-  font-size: 80%;
-}
-
 .events img {
   border: #fff solid 1px;
 }
 
 .events .title {
-  font-size: 3.5em;
   color: #00120b;
+  font-size: 3.4em;
+}
+
+@media (max-width: 1280px) {
+  .events .title {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 1088px) {
+  .events .title {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 900px) {
+  .events .title {
+    font-size: 1.9em;
+  }
+}
+
+@media (max-width: 768px) {
+  .events .title {
+    font-size: 3.6em;
+  }
 }
 
 .events .blurb {
   color: #00120b;
-  font-size: 100%;
+  font-size: 1.2em;
+}
+
+@media (max-width: 1280px) {
+  .events .blurb {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 1088px) {
+  .events .blurb {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 768px) {
+  .events .blurb {
+    font-size: 1em;
+  }
 }
 
 .events a {
@@ -437,12 +446,30 @@ a:hover {
 }
 
 .events .vline {
-  height: 100vh;
+  height: 110vh;
 }
 
 .events .overlay-middle-right {
-  top: 38%;
   right: 8%;
+  top: 34%;
+}
+
+@media (max-width: 1088px) {
+  .events .overlay-middle-right {
+    top: 34%;
+  }
+}
+
+@media (max-width: 900px) {
+  .events .overlay-middle-right {
+    top: 38%;
+  }
+}
+
+@media (max-width: 768px) {
+  .events .overlay-middle-right {
+    top: 36%;
+  }
 }
 
 @media (max-width: 769px) {
@@ -478,7 +505,7 @@ a:hover {
 
 @media (max-width: 1088px) {
   .work .blurb {
-    text-align: justify;
+    text-align: left;
   }
 }
 
@@ -564,6 +591,12 @@ a:hover {
   text-decoration: underline;
 }
 
+@media (max-width: 769px) {
+  .hero-foot .documents {
+    font-size: 0.7em;
+  }
+}
+
 .hero-foot .media-item {
   width: 70%;
 }
@@ -621,22 +654,42 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-item-align: center;
-      align-self: center;
 }
 
-.hero-foot .social-media * {
-  padding: 20%;
+@media (max-width: 769px) {
+  .hero-foot .social-media {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+  }
+}
+
+@media (max-width: 769px) {
+  .hero-foot .get-in-touch {
+    text-align: center;
+  }
 }
 
 @media (max-width: 769px) {
   .hero-foot .title {
-    font-size: 2em;
+    margin-top: 4%;
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 769px) {
+  .hero-foot .newsletter {
+    display: none;
   }
 }
 
 .hero.pattern {
-  background: url(../../img/maori_pattern.png) no-repeat;
+  background: url(../../img/maori_pattern_1.png) no-repeat;
 }
 
 @media (max-width: 769px) {

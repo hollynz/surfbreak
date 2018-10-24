@@ -9,7 +9,7 @@
                 justify-content: space-between;
                 text-align: right;
                 @include tablet {
-                        text-align: justify;
+                        text-align: left;
                 }
         }
         .view-gallery {

@@ -18,3 +18,10 @@
         @content;
     }
 }
+
+// Custom breakpoints
+@mixin custom($bp){
+    @media (max-width: #{$bp}){
+        @content;
+    }
+}
