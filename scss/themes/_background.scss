@@ -2,8 +2,8 @@
     background: url(../../img/maori_pattern_1.png) no-repeat;
     section {
         @include tablet {
-            padding-top: 15%;
-            padding-bottom: 15%;
+            padding-top: $section-padding-tablet;
+            padding-bottom: $section-padding-tablet;
         }
     }
 }

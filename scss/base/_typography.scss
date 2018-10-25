@@ -1,17 +1,14 @@
 body {
     color: $white;
 }
-
 .title, .heading {
     color: $white;
     font-family: 'Amatic SC', cursive;
 }
-
 .title {
     font-size: 3em;
     letter-spacing: 0.02em;
 }
-
 .heading {
     font-size: 5rem;
     letter-spacing: 0.1em;
@@ -20,16 +17,16 @@ body {
         font-size: 3em;
     }
 }
-
 .heading.heading-h2 {
     font-size: 2.5em;
 }
-
 .heading.heading-h3 {
     font-size: 180%;
     color: $white;
 }
-
 a {
     color: $primary-green;
+}
+a:hover {
+    color: $white;
 }

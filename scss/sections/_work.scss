@@ -1,6 +1,8 @@
 .work {
     background: url(../../img/_DSC8037.jpg) top center / cover;
-    align-self: stretch;
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
     .blurb {
         padding-right: 3%;
         text-align: right;
@@ -10,7 +12,7 @@
         }
     }
     .button {
-        margin-top: 4%;
+        margin-top: $button-margin;
         font-size: 180%;
     }
     .heading {

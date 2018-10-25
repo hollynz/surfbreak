@@ -1,16 +1,31 @@
+// Import Bulma variables
 @import '../../node_modules/bulma/sass/utilities/initial-variables.sass';
 
+// Custom variables
+
+// Colours
 $white: #fff;
 $rich-black: #00120b;
 $primary-green: #00d1b2;
 $dark-green: #034e51;
 $dark-green-transparent: rgba(3, 78, 81, 0.8);
+$transparent: rgba(255, 255, 255, 0);
 
+// Margins/padding
 $small-margin: 1rem;
 $section-padding: 8%;
+$section-padding-tablet: 15%;
 $heading-margin-large: 8%;
 $heading-margin-small: 4%;
 $field-margin: 4%;
+$button-margin: 4%;
+$button-padding: 1.5em;
 
+// Misc
 $line-width: 2px;
 $active-border: 1px;
+$overlay-bottom: 7%;
+$overlay-top: 2%;
+$overlay-horizontal-large: 4%;
+$overlay-horizontal-small: 2%;
+$none: 0;

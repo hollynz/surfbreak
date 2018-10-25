@@ -1,58 +1,64 @@
 .navbar {
-    //Hide/show nav on scroll: Javascript
+    // Javascript scrolling
     position: fixed; 
-    top: 0;
-    transition: top 0.8s ease, background 0.8s ease;
+    top: $none;
     width: 100%;
+    -webkit-transition: top 0.8s ease, background 0.8s ease;
+    -o-transition: top 0.8s ease, background 0.8s ease;
+    transition: top 0.8s ease, background 0.8s ease;
     .navbar-brand {
         @include desktop {
-            background: linear-gradient(to left, $dark-green-transparent 1%, rgba(255,255,255,0));
+            background: -webkit-gradient(linear, right top, left top, color-stop(1%, $dark-green-transparent), to($transparent));
+            background: -webkit-linear-gradient(right, $dark-green-transparent 1%, $transparent);
+            background: -o-linear-gradient(right, $dark-green-transparent 1%, $transparent);
+            background: linear-gradient(to left, $dark-green-transparent 1%, $transparent);
         }
         img {
             max-height: 4rem;
         }
     }
-    
     .navbar-item, .navbar-link {
         color: $white;
         font-family: 'Architects Daughter', cursive;
     }
-    
+    a.navbar-item {
+        position: relative;
+        margin: $none;
+    }
     a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:hover, .navbar-link.is-active {
         background: none;
         color: $primary-green;
     }
-    
-    a.navbar-item {
-      position: relative;
-      margin: 0;
-    }
-    
     .navbar-burger {
-        align-self: center;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
         z-index: 100;
     }
-    
     .page-link:after {
       position: absolute;
       top: 80%;
-      left: 0;
+      left: $none;
       right: 100%;
       margin: auto;
-      width: 0%;
+      width: $none;
       content: '.';
       color: transparent;
       background: $primary-green;
       height: 4%;
+      -webkit-transition: all .5s;
+      -o-transition: all .5s;
       transition: all .5s;
     }
-    
     .page-link:hover:after {
       width: 100%;
     }
     .navbar-menu{
         @include desktop {
-            background: linear-gradient(to left, $dark-green-transparent 2%, rgba(255,255,255,0));
+            background: -webkit-gradient(linear, right top, left top, color-stop(1%, $dark-green-transparent), to($transparent));
+            background: -webkit-linear-gradient(right, $dark-green-transparent 1%, $transparent);
+            background: -o-linear-gradient(right, $dark-green-transparent 1%, $transparent);
+            background: linear-gradient(to left, $dark-green-transparent 1%, $transparent);
             text-align: right;
         }
     }

@@ -4,9 +4,16 @@
                 margin-bottom: $heading-margin-large;
         }
         .blurb {
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
-                flex-direction: column;
-                justify-content: space-between;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                -webkit-box-pack: justify;
+                    -ms-flex-pack: justify;
+                        justify-content: space-between;
                 text-align: right;
                 @include tablet {
                         text-align: left;
@@ -15,7 +22,6 @@
         .view-gallery {
                 font-size: 90%;
         }
-        
         .learn-more {
                 font-size: 170%;
                 margin-top: 4%;
@@ -24,4 +30,3 @@
                 border: $white solid $active-border;
         }
 }
-

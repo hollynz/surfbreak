@@ -2,7 +2,8 @@
     .carousel-container {
         .carousel-item {
             .title {
-                align-self: flex-end;
+                -ms-flex-item-align: end;
+                    align-self: flex-end;
                 text-align: left;
                 background: none;
                 font-size: 2rem;

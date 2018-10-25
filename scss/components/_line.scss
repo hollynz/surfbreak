@@ -1,22 +1,16 @@
 .hline {
     border-bottom: $line-width solid $white;
 }
-
 .vline {
     width: $line-width;
     margin: auto;
+    @include custom(769px){
+        display: none;
+    }
 }
-
 .vline-white {
     border-left: $line-width solid $white;
 }
-
 .vline-black {
     border-left: $line-width solid $rich-black;
-}
-
-@media screen and (max-width: 768px) {
-    .vline {
-        display: none;
-    }
 }

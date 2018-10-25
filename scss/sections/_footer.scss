@@ -1,10 +1,10 @@
 .hero-foot {
-    .container-padding {
-        padding: 2%;
-    }
     padding: 4%;
     padding-bottom: 1%;
     background-color: $dark-green;
+    .container-padding {
+        padding: 2%;
+    }
     a {
         color: $white;
     }
@@ -22,14 +22,21 @@
         width: 70%;
     }
     .media-item:first-child {
-        align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
     }
     .media-item:last-child {
-        align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
     }
     .address {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         span {
             font-size: 100%;
         }
@@ -49,13 +56,25 @@
     }
     .social-media {
         font-size: 3em;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         @include tablet {
-            flex-direction: row;
-            justify-content: space-around;
-            align-content: space-between;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+            -ms-flex-line-pack: justify;
+                align-content: space-between;
         }
     }
     .get-in-touch {

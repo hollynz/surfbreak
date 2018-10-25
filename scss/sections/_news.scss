@@ -3,6 +3,9 @@
     color: $rich-black;
     .heading {
         color: $rich-black;
+        @include custom(($tablet)-1px){
+            text-align: center;
+        }
     }
     .button {
         border: $rich-black $active-border solid;
@@ -20,10 +23,35 @@
     .title {
         font-size: 2em;
         color: $rich-black;
+        @include desktop {
+            font-size: 1.8em;
+        }
+        @include custom(900px){
+            font-size: 1.4em;
+        }
+        @include custom(($tablet)-1px) {
+            font-size: 3em;
+        }
+        @include custom(506px){
+            font-size: 2em;
+        }
     }
     .blurb {
         color: $rich-black;
-        font-size: 90%;
+        font-size: 1em;
+        margin-left: 2%;
+        @include desktop {
+            font-size: 0.8em;
+        }
+        @include custom(900px){
+            font-size: 0.7em;
+        }
+        @include custom(($tablet)-1px) {
+            font-size: 1.1em;
+        }
+        @include custom(506px){
+            font-size: 0.8em;
+        }
     }
     .vline {
         height: 90vh;
@@ -31,6 +59,15 @@
     .overlay-middle-right {
         top: 30%;
         right: 8%;
+        @include desktop {
+            top: 34%;
+        }
+        @include custom(900px){
+            top: 32%;
+        }
+        @include custom(($tablet)-1px) {
+            top: 30%;
+        }
     }
     .media-item {
         @include tablet {
@@ -38,4 +75,3 @@
         }
     }
 }
-

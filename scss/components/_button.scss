@@ -1,23 +1,22 @@
 .button.is-primary {
     font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
+    padding-left: $button-padding;
+    padding-right: $button-padding;
     color: $rich-black;
     background-color: $primary-green;
     border: solid $white $active-border;
 }
-
 .button-primary {
     font-size: 160%;
 }
-
 .button.is-primary:hover {
     color: $white;
     background: $dark-green;
+    -webkit-transition: background 0.1s ease;
+    -o-transition: background 0.1s ease;
     transition: background 0.1s ease;
     border: solid $primary-green $active-border;
 }
-
 .main-body {
     .button {
         margin-top: 2%;
